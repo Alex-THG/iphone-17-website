@@ -1,0 +1,118 @@
+body {
+  background-color: aqua;
+}
+img {
+  border-radius: 30px;
+  cursor: pointer;
+}
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  gap: 50px;
+  margin-left: 40px;
+  margin-top: 45px;
+  font-size: x-large;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 14px;
+  text-align: center;
+  float: left;
+  border-radius: 10px;
+  gap: 15px;
+}
+.navbar a:hover {
+  background-color: black;
+  transition: background-color 0.3s ease;
+}
+.big-image {
+  display: flex;
+  align-items: center;
+}
+.big-image img {
+  width: 800px;
+}
+.big-image {
+  position: absolute;
+  right: 0;
+  top: 90px;
+}
+.text-content {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  max-width: 400px;
+  font-size: large;
+}
+.text-content {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.big-image img {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.iphones {
+  display: flex;
+  gap: 50px;
+  margin-top: 550px;
+  justify-content: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.iphones img:hover {
+  border: 2px solid blue;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 30px;
+  background-color: thistle;
+}
+#iphone-15 {
+  width: 350px;
+  height: 400px;
+}
+.macbook {
+  margin-left: 30px;
+  font-size: 45px;
+}
+.macbook-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: auto;
+  height: 500px;
+  border-radius: 20px;
+}
